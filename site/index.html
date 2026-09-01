@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
       <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Project - CT</title>
+    <title>Nelson Day Electrical - WordPress Documentation</title>
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -31,7 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> Project - CT
+          <a href="." class="icon icon-home"> Nelson Day Electrical - WordPress Documentation
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -43,39 +43,67 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">General</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#developers-info">Developers info</a>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-wordpress">What is WordPress?</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-pages-designed">Project pages designed</a>
+    <li class="toctree-l2"><a class="reference internal" href="#how-wordpress-works">How WordPress Works</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#posts-vs-pages">Posts vs Pages</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#page-builder">Page Builder</a>
+        </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#custom-widgets">Custom Widgets</a>
+    <li class="toctree-l2"><a class="reference internal" href="#tech-stack">Tech Stack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#designed-pages">Designed Pages</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#wordpress-login">WordPress Login</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#wordpress-dashboard">WordPress Dashboard</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dashboard-sidebar-menu">Dashboard Sidebar Menu:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#wordpress-customizer">WordPress Customizer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#publish-customizer-changes">Publish Customizer Changes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dashboard-vs-customizer">Dashboard vs Customizer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quick-reference-common-tasks">Quick Reference: Common Tasks</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#useful-urls">Useful URLs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#external-documentation-opens-in-new-tab">External Documentation (Opens in New Tab)</a>
     </li>
     </ul>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="home/">Home</a>
+                <li class="toctree-l1"><a class="reference internal" href="header/">Header</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="category/">Category</a>
+                <li class="toctree-l1"><a class="reference internal" href="footer/">Footer</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="product/">Product</a>
+                <li class="toctree-l1"><a class="reference internal" href="home/">Homepage</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="static/">Static</a>
+                <li class="toctree-l1"><a class="reference internal" href="static/">Static Page</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="menu/">Mega Menu</a>
+                <li class="toctree-l1"><a class="reference internal" href="blog-list/">Blog List</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="other/">Other</a>
+                <li class="toctree-l1"><a class="reference internal" href="blog-post/">Blog Post</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="menu/">Menu</a>
                 </li>
               </ul>
       </div>
@@ -85,7 +113,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">Project - CT</a>
+          <a href=".">Nelson Day Electrical - WordPress Documentation</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -101,40 +129,206 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="welcome-to-project-theme-by-coalition-technologies-documentation">Welcome to PROJECT theme by Coalition Technologies documentation</h1>
-<h2 id="developers-info">Developers info</h2>
+                <h1 id="welcome-to-nelson-day-electrical-wordpress-documentation-by-coalition-technologies">Welcome to Nelson Day Electrical WordPress Documentation by Coalition Technologies</h1>
+<h2 id="what-is-wordpress">What is WordPress?</h2>
+<p>WordPress is a <strong>Content Management System (CMS)</strong> - a tool that lets you build and manage a website without needing to write code. You create and edit content through a visual admin panel, and WordPress handles displaying it to your visitors.</p>
+<h2 id="how-wordpress-works">How WordPress Works</h2>
+<p>WordPress has two sides you need to know:</p>
 <ul>
-<li>Base theme: Cornerstone 6.14.0</li>
-<li>Node: 18.15.0</li>
-<li>Command: stencil start</li>
+<li><strong>Backend</strong> (the Dashboard) - where you log in to manage content, change settings, and control how the site works. Only you and your team can see this.</li>
+<li><strong>Frontend</strong> (the public website) - what your visitors see when they browse your site at its URL.</li>
 </ul>
-<h2 id="project-pages-designed">Project pages designed</h2>
+<blockquote>
+<p><strong>Think of it like a restaurant:</strong> The backend is the kitchen where everything is prepared. The frontend is the dining area where customers see and enjoy the final result.</p>
+</blockquote>
+<h3 id="posts-vs-pages">Posts vs Pages</h3>
+<p>New WordPress users often wonder when to use a Post vs a Page. Here's the difference:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Posts</th>
+<th>Pages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Used for</strong></td>
+<td>Blog articles, news, updates</td>
+<td>Static content like "About Us", "Contact"</td>
+</tr>
+<tr>
+<td><strong>Organized by</strong></td>
+<td>Categories &amp; tags</td>
+<td>Hierarchical (parent/child)</td>
+</tr>
+<tr>
+<td><strong>Shown on</strong></td>
+<td>Blog listing page</td>
+<td>Individual URLs</td>
+</tr>
+<tr>
+<td><strong>Timely?</strong></td>
+<td>Yes - dated, reverse order</td>
+<td>No - timeless content</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tech-stack">Tech Stack</h2>
 <ul>
+<li>WordPress (CMS)</li>
+<li>Greenshift (free theme)</li>
+<li>Greenshift (free plugin)</li>
+</ul>
+<h2 id="designed-pages">Designed Pages</h2>
+<ul>
+<li><a href="header/">Header</a></li>
+<li><a href="footer/">Footer</a></li>
 <li><a href="home/">Homepage</a></li>
-<li><a href="category/">Category Page</a></li>
-<li><a href="product/">Product Page</a></li>
 <li><a href="static/">Static Page</a></li>
-<li><a href="menu/">Mega Menu</a></li>
+<li><a href="blog-list/">Blog List</a></li>
+<li><a href="blog-post/">Blog Post</a></li>
+<li><a href="menu/">Menu</a></li>
 </ul>
-<h2 id="page-builder">Page Builder</h2>
-<p>Page Builder allows you to customize the different style elements of your theme, like colors, text sizes, the number of featured products to show on the homepage, and more. You can use this to tailor your storefront so it more closely reflects your brand.</p>
-<p>In addition, you can drag and drop content onto pages, like text blocks, images, videos, banners, carousels, buttons, and blocks of custom HTML. This enables you to showcase your products in a way that is visually rich.</p>
-<p>To access Page Builder go to Storefront › Themes › Customize to launch Page Builder. You can also read more about the Page builder in this <a href="https://support.bigcommerce.com/s/article/Page-Builder?language=en_US#using" target="_blank">documentation</a>.</p>
-<p><img alt="page-builder.png" src="img/page-builder.png" /></p>
-<p>Whenever we need to edit the site, we need to be in 'Design' mode. And whenever we need to test the site, we need to be in 'Preview' mode. You can also test on different screen sizes by clicking on the icons at the top of the Page Builder.</p>
-<p><img alt="design-preview.png" src="img/design-preview.png" /></p>
-<p>While editing the widgets in Design mode, sometimes they seem to break, but this is because the scripts stop running. If this happens, you can fix it by clicking on 'Save' in the top right corner of the Page Builder.</p>
-<p>After clicking on 'Save', you can click on 'Preview' to see the changes in action. If you want to see the changes on the live site, you need to click on 'Publish'.</p>
-<p><img alt="discard-publish.png" src="img/discard-publish.png" /></p>
-<h2 id="custom-widgets">Custom Widgets</h2>
-<p>Custom widgets are developed by Coalition Technologies according to the mockups.</p>
-<p>They can be used in the Page Builder. You can find them in the Page Builder under the Custom Widgets section.
-<img alt="custom-widgets.png" src="img/custom-widgets.png" /></p>
+<h2 id="wordpress-login">WordPress Login</h2>
+<p>Before proceeding, make sure you are logged into the WordPress backend. Use the following URL to log in:</p>
+<p>Login Path: site.com/wp-login.php</p>
+<p><img alt="wp-login.png" src="img/wp-login.png" /></p>
+<h2 id="wordpress-dashboard">WordPress Dashboard</h2>
+<p>Once logged in, you will see the following screen:</p>
+<p><img alt="wp-dashboard.png" src="img/wp-dashboard.png" /></p>
+<p>The dashboard is the WordPress backend where all site settings - both appearance and functionality - are managed.</p>
+<p>Note: Some menu items may be hidden based on your user role. Only Administrators see all options.</p>
+<h3 id="dashboard-sidebar-menu">Dashboard Sidebar Menu:</h3>
+<p><img src="img/wp-dashboard-sidebar.png" alt="wp-dashboard-sidebar.png" class="img-center"></p>
+<p>Here's a quick description of the menu items available in the left sidebar, these menu items will be used to navigate between site options:</p>
+<ul>
+    <li><strong>Dashboard</strong>: Shows your at-a-glance admin home screen and core update alerts.</li>
+    <li><strong>Posts</strong>: Where you create, edit, and organize blog posts using categories and tags.</li>
+    <li><strong>Media</strong>: Your library for uploading, storing, and managing images, videos, and documents.</li>
+    <li><strong>Pages</strong>: Where you create and manage static pages like "About Us," "Contact," or your Homepage.</li>
+    <li><strong>Comments</strong>: Where you moderate, reply to, or delete visitor comments on your posts.</li>
+    <li><strong>Appearance</strong>: Where you change your website's visual theme, customize layouts, and edit menus.</li>
+    <li><strong>Plugins</strong>: Where you install and manage add-ons that expand your site’s functionality (e.g., SEO, e-commerce).</li>
+    <li><strong>Users</strong>: Where you manage accounts, assign roles (like Editor or Administrator), and edit user profiles.</li>
+    <li><strong>Tools</strong>: Includes features to import/export data, erase personal data, and manage site health.</li>
+    <li><strong>Settings</strong>: Where you configure global parameters for your site, including general URL details, reading/writing preferences, and discussion rules.</li>
+</ul>
+
+<h2 id="wordpress-customizer">WordPress Customizer</h2>
+<p>The WordPress Customizer lets you modify site and theme settings such as colors, typography, and layout. Access it via the Customizer icon in the admin toolbar:</p>
+<p><strong>Note:</strong> You will need to be logged into the site for the admin toolbar to appear.</p>
+<p><img alt="wp-customizer-button.png" src="img/wp-customizer-button.png" /></p>
+<p><img alt="wp-customizer.png" src="img/wp-customizer.png" /></p>
+<h2 id="publish-customizer-changes">Publish Customizer Changes</h2>
+<p>Changes you make in the Customizer are <strong>not live</strong> on the site until you publish them. Here's how:</p>
+<p><strong>Note:</strong> Any changes made in the customizer would count as a change and needs to be published to reflect on the live site.</p>
+<ul>
+<li><strong>Publish</strong> — Click the <strong>Publish</strong> button at the top of the Customizer panel to push all your changes live immediately.</li>
+<li><strong>Save Draft</strong> — Use the gear icon next to the Publish button to save your changes as a draft without making them public.</li>
+<li><strong>Schedule</strong> — You can also schedule your changes to go live at a specific date and time.</li>
+</ul>
+<blockquote>
+<p><strong>Important:</strong> If you navigate away without publishing, your unsaved changes will be lost.</p>
+</blockquote>
+<p><img alt="wp-customizer-publish-button.png" src="img/wp-customizer-publish-button.png" /></p>
+<p>Clicking the Gear icon next to the publish button, will open up a panel which will display all the above options. You can skip the step marked as 1 in above image, if you don't plan on drafting or sceduling the changes but to directly publish them.</p>
+<h2 id="dashboard-vs-customizer">Dashboard vs Customizer</h2>
+<p>New users often confuse these two. Here's the difference:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Dashboard</th>
+<th>Customizer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Manage content &amp; site settings</td>
+<td>Change the visual appearance</td>
+</tr>
+<tr>
+<td><strong>What you do</strong></td>
+<td>Create posts, upload media, install plugins</td>
+<td>Edit colors, fonts, layout, menus</td>
+</tr>
+<tr>
+<td><strong>Live preview?</strong></td>
+<td>No</td>
+<td>Yes - see changes in real-time</td>
+</tr>
+<tr>
+<td><strong>Access from</strong></td>
+<td>site.com/wp-admin</td>
+<td>Admin toolbar → Customize</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quick-reference-common-tasks">Quick Reference: Common Tasks</h2>
+<table>
+<thead>
+<tr>
+<th>I want to…</th>
+<th>Go to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Write a blog post</td>
+<td>Dashboard → <strong>Posts</strong> → Add New</td>
+</tr>
+<tr>
+<td>Edit a page</td>
+<td>Dashboard → <strong>Pages</strong> → click the page</td>
+</tr>
+<tr>
+<td>Upload an image</td>
+<td>Dashboard → <strong>Media</strong> → Add New</td>
+</tr>
+<tr>
+<td>Change colors or fonts</td>
+<td><strong>Customizer</strong> → Colors / Typography</td>
+</tr>
+<tr>
+<td>Add a navigation menu item</td>
+<td><strong>Customizer</strong> → Menus</td>
+</tr>
+<tr>
+<td>Install a new plugin</td>
+<td>Dashboard → <strong>Plugins</strong> → Add New</td>
+</tr>
+<tr>
+<td>Add a new user</td>
+<td>Dashboard → <strong>Users</strong> → Add New</td>
+</tr>
+<tr>
+<td>Change the site title</td>
+<td><strong>Customizer</strong> → Site Identity</td>
+</tr>
+</tbody>
+</table>
+<h2 id="useful-urls">Useful URLs</h2>
+<ul>
+    <li>Login URL: site.com/wp-login.php</li>
+    <li>Customizer URL: site.com/wp-admin/customize.php</li>
+</ul>
+
+<h2 id="external-documentation-opens-in-new-tab">External Documentation (Opens in New Tab)</h2>
+<ul>
+<li><a href="https://wordpress.org/documentation/" target="_blank" rel="noopener noreferrer">WordPress Documentation</a></li>
+<li><a href="https://creativethemes.com/blocksy/docs/" target="_blank" rel="noopener noreferrer">Blocksy Documentation</a></li>
+<li><a href="https://greenshiftwp.com/documentation/" target="_blank" rel="noopener noreferrer">Greenshift Documentation</a></li>
+<li><a href="https://wordpress.org/support/article/appearance-menus-screen/" target="_blank" rel="noopener noreferrer">WordPress Menus Guide</a></li>
+<li><a href="https://wordpress.org/support/article/writing-posts/" target="_blank" rel="noopener noreferrer">WordPress Posts Guide</a></li>
+<li><a href="https://embla-carousel.com/get-started/" target="_blank" rel="noopener noreferrer">Embla Carousel Documentation</a></li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="home/" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="header/" class="btn btn-neutral float-right" title="Header">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -158,7 +352,7 @@
     
     
     
-      <span><a href="home/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="header/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -178,5 +372,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-08-13 20:09:45.766165+00:00
+Build Date UTC : 2026-09-01 17:45:42.285644+00:00
 -->
