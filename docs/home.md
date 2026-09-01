@@ -1,45 +1,69 @@
 # Homepage
-The homepage is the main page of the website. It is the first page that the user sees when they visit the website.
 
-## Hero Banner
+This page documents the custom homepage build delivered in WordPress using Blocksy + Greenshift.
 
+![homepage.jpeg](img/homepage.jpeg)
 
-The Hero Banner Carousel is using the built-in BigCommerce Home Page Carousel.
-Please follow the <a href="https://support.bigcommerce.com/s/article/Carousel?language=en_US" target="_blank">BigCommerce documentation</a> to see how to manage it.
-Please note that the styles are in the theme and should not be changed unless you are confident in your abilities.
+## Implementation Notes
 
-## Featured Products
+* Built with Gutenberg/Greenshift blocks.
+* Desktop mockup is the visual source of truth.
+* Mobile and tablet behavior were implemented responsively without dedicated mockups.
 
+## Custom Build Notes (Confirmed in Theme Code)
 
-The Featured Products panel displays products that you have marked as Featured.
-To mark a product as Featured, simply go to the product listing via Products->View, then click on the star symbol on the product you want to display.
+Homepage-related custom classes and behavior exist in child theme CSS/JS:
 
-![featured-inst.png](img/featured-inst.png)
+* `ct-services-offered` section styling and responsive card behavior
+* `ct-milk-mind-blogs` section styling and card overlays
+* `ct-youre-not-alone` visual overlay treatment
+* Embla slider behavior via `js/script.js` and CDN enqueue in `functions.php`
 
-## Full Banner
+## Typical Homepage Sections
 
+The homepage was built with reusable block sections. Exact section naming in admin may vary, but generally includes:
 
-The full Banner is made using a BigCommerce widget. You can change it in the [Page Builder](index.md/#page-builder).
+* Nourish Your  Mind and Body (headline, supporting copy, call-to-action, image/background)
+* Accreditations
+* Find your path
+* Physician Assistant w/ Gradient
+* How it works
+* Learn and explore
+* Meet your team
+* You're not alone
 
-You can change the text by clicking on it
+## Editing the Homepage
 
+1. Go to `Pages > Home` (or the page assigned as Front Page in Settings).
+2. Open with block editor.
+3. Update text, links, and media directly in each section block.
+4. For layout adjustments, use the block sidebar settings (spacing, alignment, columns, stacking).
+5. Preview desktop/tablet/mobile before publishing.
 
+![wp-homepage-be-1.png](img/wp-homepage-be-1.png)
 
-You can toggle the visibility, add more slides, change the image, and more by clicking on the options on the left side.
-Please note that due to the custom design of the theme, some options may not work as expected.
+![wp-homepage-be.png](img/wp-homepage-be.png)
 
+[Quick Tutorial on Gutenberg WordPress](https://youtu.be/te7aHH7trts?t=21&si=HtpeaElcMJfPp5v9)
 
+## Greenshift Block Guidance
 
-## Small Banner
+* Reuse existing blocks/patterns before creating new styles.
+* Prefer duplicating existing sections and editing content to keep style consistency.
+* Keep typography, spacing, and button styles aligned with existing homepage blocks.
+* Avoid adding extra plugins for layout if the same result can be achieved with current Greenshift + core blocks.
 
+## Responsive Behavior Guidelines
 
-This is the custom widget called 'cta'. You need to select the style CTA to display the style like this one.
+Since there were no mobile-specific mockups, use these rules:
 
+* Maintain content hierarchy from desktop.
+* Stack multi-column sections on smaller screens.
+* Keep CTA buttons easy to tap and fully visible.
+* Avoid text overlays that become unreadable on mobile.
+* Adjust spacing/padding to prevent cramped sections.
 
+## Caution
 
-## Logo List
-
-
-This is the custom widget called 'logos'. You can add multiple logos, delete, duplicate, rearrange, and more.
-
-
+* Global styles may affect multiple sections/pages. Validate after major style changes.
+* If a section appears visually broken, check responsive controls and inherited block styles first.

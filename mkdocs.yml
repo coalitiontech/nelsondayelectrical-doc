@@ -1,12 +1,13 @@
-site_name: Project - CT
+site_name: Nelson Day Electrical - WordPress Documentation
 nav:
   - General: index.md
-  - Home: home.md
-  - Category: category.md
-  - Product: product.md
-  - Static: static.md
-  - Mega Menu: menu.md
-  - Other: other.md
+  - Header: header.md
+  - Footer: footer.md
+  - Homepage: home.md
+  - Static Page: static.md
+  - Blog List: blog-list.md
+  - Blog Post: blog-post.md
+  - Menu: menu.md
 theme: readthedocs
 extra_css:
   - style.css
