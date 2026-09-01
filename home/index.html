@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Homepage - Nelson Day Electrical - WordPress Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Homepage";
+        var mkdocs_page_input_path = "home.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Nelson Day Electrical - WordPress Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">General</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../header/">Header</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../footer/">Footer</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Homepage</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#implementation-notes">Implementation Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#typical-homepage-sections">Typical Homepage Sections</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#editing-the-homepage">Editing the Homepage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#greenshift-block-guidance">Greenshift Block Guidance</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#responsive-behavior-guidelines">Responsive Behavior Guidelines</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#caution">Caution</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../static/">Static Page</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../blog-list/">Blog List</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../blog-post/">Blog Post</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Nelson Day Electrical - WordPress Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Homepage</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="homepage">Homepage</h1>
+<p>This page documents the custom homepage build delivered in WordPress using Blocksy + Greenshift.</p>
+<p><img alt="homepage.jpeg" src="../img/homepage.jpeg" /></p>
+<h2 id="implementation-notes">Implementation Notes</h2>
+<ul>
+<li>Built with Gutenberg/Greenshift blocks.</li>
+<li>Desktop mockup is the visual source of truth.</li>
+<li>Mobile and tablet behavior were implemented responsively without dedicated mockups.</li>
+</ul>
+<h2 id="custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</h2>
+<p>Homepage-related custom classes and behavior exist in child theme CSS/JS:</p>
+<ul>
+<li><code>ct-services-offered</code> section styling and responsive card behavior</li>
+<li><code>ct-milk-mind-blogs</code> section styling and card overlays</li>
+<li><code>ct-youre-not-alone</code> visual overlay treatment</li>
+<li>Embla slider behavior via <code>js/script.js</code> and CDN enqueue in <code>functions.php</code></li>
+</ul>
+<h2 id="typical-homepage-sections">Typical Homepage Sections</h2>
+<p>The homepage was built with reusable block sections. Exact section naming in admin may vary, but generally includes:</p>
+<ul>
+<li>Nourish Your  Mind and Body (headline, supporting copy, call-to-action, image/background)</li>
+<li>Accreditations</li>
+<li>Find your path</li>
+<li>Physician Assistant w/ Gradient</li>
+<li>How it works</li>
+<li>Learn and explore</li>
+<li>Meet your team</li>
+<li>You're not alone</li>
+</ul>
+<h2 id="editing-the-homepage">Editing the Homepage</h2>
+<ol>
+<li>Go to <code>Pages &gt; Home</code> (or the page assigned as Front Page in Settings).</li>
+<li>Open with block editor.</li>
+<li>Update text, links, and media directly in each section block.</li>
+<li>For layout adjustments, use the block sidebar settings (spacing, alignment, columns, stacking).</li>
+<li>Preview desktop/tablet/mobile before publishing.</li>
+</ol>
+<p><img alt="wp-homepage-be-1.png" src="../img/wp-homepage-be-1.png" /></p>
+<p><img alt="wp-homepage-be.png" src="../img/wp-homepage-be.png" /></p>
+<p><a href="https://youtu.be/te7aHH7trts?t=21&amp;si=HtpeaElcMJfPp5v9">Quick Tutorial on Gutenberg WordPress</a></p>
+<h2 id="greenshift-block-guidance">Greenshift Block Guidance</h2>
+<ul>
+<li>Reuse existing blocks/patterns before creating new styles.</li>
+<li>Prefer duplicating existing sections and editing content to keep style consistency.</li>
+<li>Keep typography, spacing, and button styles aligned with existing homepage blocks.</li>
+<li>Avoid adding extra plugins for layout if the same result can be achieved with current Greenshift + core blocks.</li>
+</ul>
+<h2 id="responsive-behavior-guidelines">Responsive Behavior Guidelines</h2>
+<p>Since there were no mobile-specific mockups, use these rules:</p>
+<ul>
+<li>Maintain content hierarchy from desktop.</li>
+<li>Stack multi-column sections on smaller screens.</li>
+<li>Keep CTA buttons easy to tap and fully visible.</li>
+<li>Avoid text overlays that become unreadable on mobile.</li>
+<li>Adjust spacing/padding to prevent cramped sections.</li>
+</ul>
+<h2 id="caution">Caution</h2>
+<ul>
+<li>Global styles may affect multiple sections/pages. Validate after major style changes.</li>
+<li>If a section appears visually broken, check responsive controls and inherited block styles first.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../footer/" class="btn btn-neutral float-left" title="Footer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../static/" class="btn btn-neutral float-right" title="Static Page">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../footer/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../static/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
