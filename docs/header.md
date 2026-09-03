@@ -8,27 +8,29 @@
 
 ### Change Text
 
-1 - Navigation to Customizer:
+1 - Navigation to Side Editor and select patterns:
     
-![wp-header-topbar-be-1.png](img/wp-header-topbar-be-1.png)
+![wp-site-editor-pattern.png](img/wp-site-editor-pattern.png)
 
-2 - Click on the HTML block:
+2 - Click on the Header from sidebar:
     
-![wp-header-topbar-be-2.png](img/wp-header-topbar-be-2.png)
+![wp-site-editor-pattern-header.png](img/wp-site-editor-pattern-header.png)
 
-3 - This gives you a view of the settings of the HTML block, click on code:
+3 - Hover over the Header pattern and click the three dots to open the menu and select edit:
     
-![wp-header-topbar-be-3.png](img/wp-header-topbar-be-3.png)
+![wp-site-editor-pattern-header-edit.png](img/wp-site-editor-pattern-header-edit.png)
 
-4 - In the code tab, you can see the text currently being used there, once you identify the text, then you can replace the text with your own, please note just replace the text part and not the code surrounding the text:
-    
-![wp-header-topbar-be-4.png](img/wp-header-topbar-be-4.png)
+4 - Click on the 3 line bar to open the List view, and then expand the first group and row, then click the paragraph:
 
-5 - Once Changed, then publish the changes.
+![wp-site-editor-tobar-edit-text.png](img/wp-site-editor-tobar-edit-text.png)
+
+5 - Change the text and click the save button.
+
+![wp-site-editor-tobar-edit-text-save.png](img/wp-site-editor-tobar-edit-text-save.png)
 
 ### Change Background
 
-1 - Navigation to Customizer:
+1 - Navigation to Side Editor:
     
 ![wp-header-topbar-be-1.png](img/wp-header-topbar-be-1.png)
 
@@ -46,7 +48,7 @@
 
 ## Main Navigation
 
-1 - Navigation to Customizer:
+1 - Navigation to Side Editor:
     
 ![wp-header-topbar-be-1.png](img/wp-header-topbar-be-1.png)
 

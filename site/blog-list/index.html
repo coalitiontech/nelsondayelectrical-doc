@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="../img/favicon.ico">
-    <title>Static Page - Nelson Day Electrical - WordPress Documentation</title>
+    <title>Blog List - Nelson Day Electrical - WordPress Documentation</title>
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/theme_extra.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
@@ -11,8 +11,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Static Page";
-        var mkdocs_page_input_path = "static.md";
+        var mkdocs_page_name = "Blog List";
+        var mkdocs_page_input_path = "blog-list.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -55,24 +55,26 @@
                 <li class="toctree-l1"><a class="reference internal" href="../home/">Homepage</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../static/">Static Page</a>
+                </li>
+              </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Static Page</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Blog List</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#implementation-notes">Implementation Notes</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#recommended-static-page-structure">Recommended Static Page Structure</a>
+    <li class="toctree-l2"><a class="reference internal" href="#custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#editing-instructions">Editing Instructions</a>
+    <li class="toctree-l2"><a class="reference internal" href="#content-source">Content Source</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#layout-and-style-rules">Layout and Style Rules</a>
+    <li class="toctree-l2"><a class="reference internal" href="#editing-blog-list-behavior">Editing Blog List Behavior</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#responsive-guidance">Responsive Guidance</a>
+    <li class="toctree-l2"><a class="reference internal" href="#design-and-qa-rules">Design and QA Rules</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#responsive-notes">Responsive Notes</a>
     </li>
     </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../blog-list/">Blog List</a>
                 </li>
               </ul>
               <ul>
@@ -97,7 +99,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Static Page</li>
+      <li class="breadcrumb-item active">Blog List</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -106,47 +108,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="static-page">Static Page</h1>
-<p>This page type is for standard content pages (for example: About, Services, Contact-style informational pages) using the delivered design system.</p>
+                <h1 id="blog-list">Blog List</h1>
+<p>The blog list page is the archive page showing multiple posts (cards/list items) and linking to individual blog posts.</p>
 <h2 id="implementation-notes">Implementation Notes</h2>
 <ul>
-<li>Built in WordPress block editor with Greenshift/core blocks.</li>
-<li>Desktop design is the main reference.</li>
-<li>Mobile behavior is handled through responsive best-fit adjustments.</li>
+<li>Built with WordPress posts archive behavior plus delivered front-end styling.</li>
+<li>Styling aligns with homepage/static page visual system.</li>
+<li>Desktop mockup guided design; mobile behavior is responsive best-fit.</li>
 </ul>
-<h2 id="recommended-static-page-structure">Recommended Static Page Structure</h2>
+<h2 id="custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</h2>
+<p>Blog archive has custom styling in child theme CSS for:</p>
 <ul>
-<li>Intro/hero section with page title and optional subtitle</li>
-<li>Body content sections (text, image + text, icon lists, CTA strips)</li>
-<li>Optional final CTA section</li>
+<li>Archive spacing and container layout</li>
+<li>Custom sort wrapper UI (<code>.custom-blog-sort-wrap</code>, form/select styling)</li>
+<li>Sidebar search widget styling</li>
+<li>Entries spacing and responsive behavior</li>
 </ul>
-<h2 id="editing-instructions">Editing Instructions</h2>
+<h2 id="content-source">Content Source</h2>
+<ul>
+<li>Blog list content is sourced from WordPress <code>Posts</code>.</li>
+<li>Each card item generally uses:</li>
+<li>Featured image</li>
+<li>Post title</li>
+<li>Excerpt/summary</li>
+<li>Publish date and/or category (if enabled in template)</li>
+<li>Read more link</li>
+</ul>
+<h2 id="editing-blog-list-behavior">Editing Blog List Behavior</h2>
 <ol>
-<li>Go to <code>Pages</code> and select the desired static page.</li>
-<li>Edit content directly in existing blocks.</li>
-<li>Keep heading hierarchy consistent (<code>H1</code> once per page, then <code>H2/H3</code> as needed).</li>
-<li>Replace images using WordPress media library (optimize file size before upload).</li>
-<li>Preview before publishing.</li>
+<li>Go to <code>Posts</code> in WordPress admin to add/edit content.</li>
+<li>Ensure each post has:</li>
+<li>Featured image</li>
+<li>Clean title</li>
+<li>Short intro/excerpt</li>
+<li>Correct category/tags (if used)</li>
+<li>The archive page updates automatically based on published posts.</li>
 </ol>
-<h2 id="layout-and-style-rules">Layout and Style Rules</h2>
+<h2 id="design-and-qa-rules">Design and QA Rules</h2>
 <ul>
-<li>Reuse existing section patterns from delivered pages whenever possible.</li>
-<li>Keep consistent spacing rhythm between sections.</li>
-<li>Do not create one-off typography styles unless approved.</li>
-<li>Use existing button styles/colors from the homepage system.</li>
+<li>Keep featured image aspect ratios consistent where possible.</li>
+<li>Use similar excerpt lengths to avoid uneven card heights.</li>
+<li>Avoid overly long titles that break layout.</li>
+<li>Check pagination and card spacing after publishing new posts.</li>
 </ul>
-<h2 id="responsive-guidance">Responsive Guidance</h2>
+<h2 id="responsive-notes">Responsive Notes</h2>
 <ul>
-<li>Convert side-by-side sections to stacked layout on smaller viewports.</li>
-<li>Keep line lengths readable on mobile.</li>
-<li>Confirm image crop/focal points still make sense at narrow widths.</li>
+<li>Desktop multi-column cards should collapse into fewer columns on tablet/mobile.</li>
+<li>Ensure tap targets are comfortable and card links remain clear.</li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../home/" class="btn btn-neutral float-left" title="Homepage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../blog-list/" class="btn btn-neutral float-right" title="Blog List">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../static/" class="btn btn-neutral float-left" title="Static Page"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../blog-post/" class="btn btn-neutral float-right" title="Blog Post">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr>
@@ -169,10 +184,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../home/" style="color: #fcfcfc">« Previous</a></span>
+      <span><a href="../static/" style="color: #fcfcfc">« Previous</a></span>
     
     
-      <span><a href="../blog-list/" style="color: #fcfcfc">Next »</a></span>
+      <span><a href="../blog-post/" style="color: #fcfcfc">Next »</a></span>
     
   </span>
 </div>

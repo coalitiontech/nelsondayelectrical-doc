@@ -11,3 +11,5 @@ nav:
 theme: readthedocs
 extra_css:
   - style.css
+plugins:
+  - glightbox

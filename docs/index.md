@@ -77,42 +77,26 @@ Here's a quick description of the menu items available in the left sidebar, thes
     <li><strong>Settings</strong>: Where you configure global parameters for your site, including general URL details, reading/writing preferences, and discussion rules.</li>
 </ul>
 
-## WordPress Customizer
+## WordPress Side Editor
 
-The WordPress Customizer lets you modify site and theme settings such as colors, typography, and layout. Access it via the Customizer icon in the admin toolbar:
+The WordPress Side Editor lets you modify site and theme settings such as colors, typography, and layout. Access it via the Side Editor icon in the admin dashboard:
 
-<strong>Note:</strong> You will need to be logged into the site for the admin toolbar to appear.
+<strong>Note:</strong> You will need to be logged into the site for the admin dashboard to appear.
 
 ![wp-customizer-button.png](img/wp-customizer-button.png)
 
 ![wp-customizer.png](img/wp-customizer.png)
 
-## Publish Customizer Changes
-
-Changes you make in the Customizer are **not live** on the site until you publish them. Here's how:
-
-<strong>Note:</strong> Any changes made in the customizer would count as a change and needs to be published to reflect on the live site.
-
-- **Publish** — Click the **Publish** button at the top of the Customizer panel to push all your changes live immediately.
-- **Save Draft** — Use the gear icon next to the Publish button to save your changes as a draft without making them public.
-- **Schedule** — You can also schedule your changes to go live at a specific date and time.
-
-> **Important:** If you navigate away without publishing, your unsaved changes will be lost.
-
-![wp-customizer-publish-button.png](img/wp-customizer-publish-button.png)
-
-Clicking the Gear icon next to the publish button, will open up a panel which will display all the above options. You can skip the step marked as 1 in above image, if you don't plan on drafting or sceduling the changes but to directly publish them.
-
-## Dashboard vs Customizer
+## Dashboard vs Side Editor
 
 New users often confuse these two. Here's the difference:
 
-| | Dashboard | Customizer |
+| | Dashboard | Side Editor |
 |---|---|---|
 | **Purpose** | Manage content & site settings | Change the visual appearance |
 | **What you do** | Create posts, upload media, install plugins | Edit colors, fonts, layout, menus |
 | **Live preview?** | No | Yes - see changes in real-time |
-| **Access from** | site.com/wp-admin | Admin toolbar → Customize |
+| **Access from** | site.com/wp-admin | Dashboard → Apperance → Editor |
 
 ## Quick Reference: Common Tasks
 
@@ -121,24 +105,22 @@ New users often confuse these two. Here's the difference:
 | Write a blog post | Dashboard → **Posts** → Add New |
 | Edit a page | Dashboard → **Pages** → click the page |
 | Upload an image | Dashboard → **Media** → Add New |
-| Change colors or fonts | **Customizer** → Colors / Typography |
-| Add a navigation menu item | **Customizer** → Menus |
+| Change colors or fonts | **Side Editor** → Styles → Colors / Typography |
+| Add a navigation menu item | **Side Editor** → Styles → Menus |
 | Install a new plugin | Dashboard → **Plugins** → Add New |
 | Add a new user | Dashboard → **Users** → Add New |
-| Change the site title | **Customizer** → Site Identity |
+| Change the site title | **Side Editor** → Styles → Site Identity |
 
 ## Useful URLs
 
 <ul>
     <li>Login URL: site.com/wp-login.php</li>
-    <li>Customizer URL: site.com/wp-admin/customize.php</li>
+    <li>Side Editor URL: site.com/wp-admin/site-editor.php</li>
 </ul>
 
 ## External Documentation (Opens in New Tab)
 
 * <a href="https://wordpress.org/documentation/" target="_blank" rel="noopener noreferrer">WordPress Documentation</a>
-* <a href="https://creativethemes.com/blocksy/docs/" target="_blank" rel="noopener noreferrer">Blocksy Documentation</a>
 * <a href="https://greenshiftwp.com/documentation/" target="_blank" rel="noopener noreferrer">Greenshift Documentation</a>
 * <a href="https://wordpress.org/support/article/appearance-menus-screen/" target="_blank" rel="noopener noreferrer">WordPress Menus Guide</a>
 * <a href="https://wordpress.org/support/article/writing-posts/" target="_blank" rel="noopener noreferrer">WordPress Posts Guide</a>
-* <a href="https://embla-carousel.com/get-started/" target="_blank" rel="noopener noreferrer">Embla Carousel Documentation</a>

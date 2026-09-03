@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
+<!DOCTYPE html><html class="writer-html5" lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="None">
+      <link rel="shortcut icon" href="img/favicon.ico">
     <title>Nelson Day Electrical - WordPress Documentation</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-        <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/theme_extra.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link href="style.css" rel="stylesheet">
     
       <script>
         // Current page data
@@ -23,7 +21,12 @@
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
       <script>hljs.highlightAll();</script> 
-</head>
+<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+        </style></head>
 
 <body class="wy-body-for-nav" role="document">
 
@@ -32,11 +35,7 @@
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
           <a href="." class="icon icon-home"> Nelson Day Electrical - WordPress Documentation
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
+        </a>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
@@ -63,11 +62,9 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#wordpress-customizer">WordPress Customizer</a>
+    <li class="toctree-l2"><a class="reference internal" href="#wordpress-side-editor">WordPress Side Editor</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#publish-customizer-changes">Publish Customizer Changes</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#dashboard-vs-customizer">Dashboard vs Customizer</a>
+    <li class="toctree-l2"><a class="reference internal" href="#dashboard-vs-side-editor">Dashboard vs Side Editor</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#quick-reference-common-tasks">Quick Reference: Common Tasks</a>
     </li>
@@ -124,7 +121,7 @@
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
@@ -193,14 +190,14 @@
 <h2 id="wordpress-login">WordPress Login</h2>
 <p>Before proceeding, make sure you are logged into the WordPress backend. Use the following URL to log in:</p>
 <p>Login Path: site.com/wp-login.php</p>
-<p><img alt="wp-login.png" src="img/wp-login.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/wp-login.png" data-desc-position="bottom"><img alt="wp-login.png" src="img/wp-login.png"></a></p>
 <h2 id="wordpress-dashboard">WordPress Dashboard</h2>
 <p>Once logged in, you will see the following screen:</p>
-<p><img alt="wp-dashboard.png" src="img/wp-dashboard.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/wp-dashboard.png" data-desc-position="bottom"><img alt="wp-dashboard.png" src="img/wp-dashboard.png"></a></p>
 <p>The dashboard is the WordPress backend where all site settings - both appearance and functionality - are managed.</p>
 <p>Note: Some menu items may be hidden based on your user role. Only Administrators see all options.</p>
 <h3 id="dashboard-sidebar-menu">Dashboard Sidebar Menu:</h3>
-<p><img src="img/wp-dashboard-sidebar.png" alt="wp-dashboard-sidebar.png" class="img-center"></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/wp-dashboard-sidebar.png" data-desc-position="bottom"><img src="img/wp-dashboard-sidebar.png" alt="wp-dashboard-sidebar.png" class="img-center"></a></p>
 <p>Here's a quick description of the menu items available in the left sidebar, these menu items will be used to navigate between site options:</p>
 <ul>
     <li><strong>Dashboard</strong>: Shows your at-a-glance admin home screen and core update alerts.</li>
@@ -215,32 +212,19 @@
     <li><strong>Settings</strong>: Where you configure global parameters for your site, including general URL details, reading/writing preferences, and discussion rules.</li>
 </ul>
 
-<h2 id="wordpress-customizer">WordPress Customizer</h2>
-<p>The WordPress Customizer lets you modify site and theme settings such as colors, typography, and layout. Access it via the Customizer icon in the admin toolbar:</p>
-<p><strong>Note:</strong> You will need to be logged into the site for the admin toolbar to appear.</p>
-<p><img alt="wp-customizer-button.png" src="img/wp-customizer-button.png" /></p>
-<p><img alt="wp-customizer.png" src="img/wp-customizer.png" /></p>
-<h2 id="publish-customizer-changes">Publish Customizer Changes</h2>
-<p>Changes you make in the Customizer are <strong>not live</strong> on the site until you publish them. Here's how:</p>
-<p><strong>Note:</strong> Any changes made in the customizer would count as a change and needs to be published to reflect on the live site.</p>
-<ul>
-<li><strong>Publish</strong> — Click the <strong>Publish</strong> button at the top of the Customizer panel to push all your changes live immediately.</li>
-<li><strong>Save Draft</strong> — Use the gear icon next to the Publish button to save your changes as a draft without making them public.</li>
-<li><strong>Schedule</strong> — You can also schedule your changes to go live at a specific date and time.</li>
-</ul>
-<blockquote>
-<p><strong>Important:</strong> If you navigate away without publishing, your unsaved changes will be lost.</p>
-</blockquote>
-<p><img alt="wp-customizer-publish-button.png" src="img/wp-customizer-publish-button.png" /></p>
-<p>Clicking the Gear icon next to the publish button, will open up a panel which will display all the above options. You can skip the step marked as 1 in above image, if you don't plan on drafting or sceduling the changes but to directly publish them.</p>
-<h2 id="dashboard-vs-customizer">Dashboard vs Customizer</h2>
+<h2 id="wordpress-side-editor">WordPress Side Editor</h2>
+<p>The WordPress Side Editor lets you modify site and theme settings such as colors, typography, and layout. Access it via the Side Editor icon in the admin dashboard:</p>
+<p><strong>Note:</strong> You will need to be logged into the site for the admin dashboard to appear.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/wp-customizer-button.png" data-desc-position="bottom"><img alt="wp-customizer-button.png" src="img/wp-customizer-button.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/wp-customizer.png" data-desc-position="bottom"><img alt="wp-customizer.png" src="img/wp-customizer.png"></a></p>
+<h2 id="dashboard-vs-side-editor">Dashboard vs Side Editor</h2>
 <p>New users often confuse these two. Here's the difference:</p>
 <table>
 <thead>
 <tr>
 <th></th>
 <th>Dashboard</th>
-<th>Customizer</th>
+<th>Side Editor</th>
 </tr>
 </thead>
 <tbody>
@@ -262,7 +246,7 @@
 <tr>
 <td><strong>Access from</strong></td>
 <td>site.com/wp-admin</td>
-<td>Admin toolbar → Customize</td>
+<td>Dashboard → Apperance → Editor</td>
 </tr>
 </tbody>
 </table>
@@ -289,11 +273,11 @@
 </tr>
 <tr>
 <td>Change colors or fonts</td>
-<td><strong>Customizer</strong> → Colors / Typography</td>
+<td><strong>Side Editor</strong> → Styles → Colors / Typography</td>
 </tr>
 <tr>
 <td>Add a navigation menu item</td>
-<td><strong>Customizer</strong> → Menus</td>
+<td><strong>Side Editor</strong> → Styles → Menus</td>
 </tr>
 <tr>
 <td>Install a new plugin</td>
@@ -305,24 +289,22 @@
 </tr>
 <tr>
 <td>Change the site title</td>
-<td><strong>Customizer</strong> → Site Identity</td>
+<td><strong>Side Editor</strong> → Styles → Site Identity</td>
 </tr>
 </tbody>
 </table>
 <h2 id="useful-urls">Useful URLs</h2>
 <ul>
     <li>Login URL: site.com/wp-login.php</li>
-    <li>Customizer URL: site.com/wp-admin/customize.php</li>
+    <li>Side Editor URL: site.com/wp-admin/site-editor.php</li>
 </ul>
 
 <h2 id="external-documentation-opens-in-new-tab">External Documentation (Opens in New Tab)</h2>
 <ul>
 <li><a href="https://wordpress.org/documentation/" target="_blank" rel="noopener noreferrer">WordPress Documentation</a></li>
-<li><a href="https://creativethemes.com/blocksy/docs/" target="_blank" rel="noopener noreferrer">Blocksy Documentation</a></li>
 <li><a href="https://greenshiftwp.com/documentation/" target="_blank" rel="noopener noreferrer">Greenshift Documentation</a></li>
 <li><a href="https://wordpress.org/support/article/appearance-menus-screen/" target="_blank" rel="noopener noreferrer">WordPress Menus Guide</a></li>
 <li><a href="https://wordpress.org/support/article/writing-posts/" target="_blank" rel="noopener noreferrer">WordPress Posts Guide</a></li>
-<li><a href="https://embla-carousel.com/get-started/" target="_blank" rel="noopener noreferrer">Embla Carousel Documentation</a></li>
 </ul>
               
             </div>
@@ -331,7 +313,7 @@
         <a href="header/" class="btn btn-neutral float-right" title="Header">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
@@ -352,7 +334,7 @@
     
     
     
-      <span><a href="header/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="header/" style="color: #fcfcfc">Next »</a></span>
     
   </span>
 </div>
@@ -360,17 +342,18 @@
     <script>var base_url = ".";</script>
     <script src="js/theme_extra.js"></script>
     <script src="js/theme.js"></script>
-      <script src="search/main.js"></script>
     <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
         });
     </script>
 
-</body>
-</html>
 
-<!--
+
+
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html><!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-09-01 17:45:42.285644+00:00
+Build Date UTC : 2026-09-03 19:13:14.974051+00:00
 -->

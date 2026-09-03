@@ -2,7 +2,7 @@
 
 ![footer.png](img/footer.png)
 
-1 - Navigation to Customizer and click Footer:
+1 - Navigation to Side Editor and click Footer:
 
 ![wp-footer-be-1.png](img/wp-footer-be-1.png)
 
