@@ -66,17 +66,29 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Blog Post</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#implementation-notes">Implementation Notes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#open-or-add-a-post">Open or Add a Post</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#understand-the-post-editor">Understand the Post Editor</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#expected-post-structure">Expected Post Structure</a>
+    <li class="toctree-l2"><a class="reference internal" href="#edit-the-article-content">Edit the Article Content</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#title-and-body">Title and Body</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#editing-instructions">Editing Instructions</a>
+    <li class="toctree-l3"><a class="reference internal" href="#featured-image">Featured Image</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#content-guidelines">Content Guidelines</a>
+    <li class="toctree-l3"><a class="reference internal" href="#excerpt">Excerpt</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#responsive-notes">Responsive Notes</a>
+    <li class="toctree-l3"><a class="reference internal" href="#categories-and-tags">Categories and Tags</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-the-post-settings-carefully">Use the Post Settings Carefully</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preview-save-and-check-the-post">Preview, Save, and Check the Post</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#changes-that-need-extra-care">Changes That Need Extra Care</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#block-editor-tutorials">Block Editor Tutorials</a>
     </li>
     </ul>
                 </li>
@@ -108,48 +120,75 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="blog-post">Blog Post</h1>
-<p>This page type documents single blog post pages.</p>
-<h2 id="implementation-notes">Implementation Notes</h2>
-<ul>
-<li>Built from WordPress single post template styling in the delivered project scope.</li>
-<li>Content is managed in <code>Posts</code> and rendered with consistent blog post design.</li>
-</ul>
-<h2 id="custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</h2>
-<p>Single post template includes customizations for:</p>
-<ul>
-<li>Featured image container sizing/spacing</li>
-<li>Share box alignment and icon/button styling</li>
-<li>Custom social icon network output and clipboard label behavior ("Copy link")</li>
-</ul>
-<h2 id="expected-post-structure">Expected Post Structure</h2>
-<ul>
-<li>Title</li>
-<li>Featured image</li>
-<li>Post body content (headings, paragraphs, lists, media)</li>
-<li>Optional metadata (date, author, category)</li>
-<li>Optional related/next-prev navigation depending on current theme settings</li>
-</ul>
-<h2 id="editing-instructions">Editing Instructions</h2>
+                <h1 id="blog-posts">Blog Posts</h1>
+<p>A blog post is an individual article. Posts are managed under <code>Posts</code>, not <code>Pages</code>. Published posts are added automatically to the blog list.</p>
+<h2 id="open-or-add-a-post">Open or Add a Post</h2>
+<p>To edit an existing article:</p>
 <ol>
-<li>Go to <code>Posts</code> and open the target post.</li>
-<li>Edit content in Gutenberg editor.</li>
-<li>Keep heading order semantic (<code>H2</code> then <code>H3</code>, avoid jumping levels).</li>
-<li>Add alt text to images for accessibility.</li>
-<li>Preview before publishing.</li>
+<li>Go to <code>Posts &gt; All Posts</code>.</li>
+<li>Find the article. Use <code>Search Posts</code> if needed.</li>
+<li>Select the post title, or hover over the row and select <code>Edit</code>.</li>
 </ol>
-<h2 id="content-guidelines">Content Guidelines</h2>
+<p>To start a new article, go to <code>Posts &gt; Add Post</code>. Do not publish a new article until its text, links, featured image, excerpt, and category have been reviewed.</p>
+<h2 id="understand-the-post-editor">Understand the Post Editor</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-blog-post-editor-annotated.png" data-desc-position="bottom"><img alt="Blog post List View and Post settings marked" src="../img/wp-blog-post-editor-annotated.png"></a></p>
+<p>The numbered callouts identify:</p>
+<ol>
+<li>The <code>Document Overview</code> button.</li>
+<li>The <code>List View</code> tab.</li>
+<li>The article's content blocks.</li>
+<li>The <code>Post</code> settings panel.</li>
+</ol>
+<p>The current post content includes blocks such as <code>Featured Image</code>, <code>Heading Advanced</code>, <code>Paragraph</code>, <code>List</code>, and <code>Accordion</code>. Select an existing block in List View to find the same item in the article. When a block is selected, its editing options appear in the <code>Block</code> tab on the right.</p>
+<h2 id="edit-the-article-content">Edit the Article Content</h2>
+<h3 id="title-and-body">Title and Body</h3>
+<ol>
+<li>Select the title or an existing content block.</li>
+<li>Edit the wording directly in the editor.</li>
+<li>Keep the existing heading levels and surrounding blocks in place.</li>
+<li>Use short paragraphs and descriptive link text so the article is easy to scan.</li>
+</ol>
+<p>For factual, legal, financial, safety, or time-sensitive claims, confirm the source and review date before publishing. Do not treat an old article as evidence that a current claim is still accurate.</p>
+<h3 id="featured-image">Featured Image</h3>
+<p>The featured image is displayed in the <code>Post</code> tab. Use <code>Edit or replace the featured image</code>, then <code>Replace</code>, to choose the approved image. Confirm the image is optimized and has suitable alternative text.</p>
+<h3 id="excerpt">Excerpt</h3>
+<p>Select <code>Add an excerpt…</code> in the <code>Post</code> tab and enter a short summary. The <code>Blog Home</code> template uses the <code>Excerpt</code> block in each repeated post card, so a concise excerpt helps keep the blog list consistent.</p>
+<h3 id="categories-and-tags">Categories and Tags</h3>
+<p>Open <code>Categories</code> or <code>Tags</code> in the <code>Post</code> tab. Select the existing category that best describes the article. Create a new category or tag only when the website administrator has approved it.</p>
+<h2 id="use-the-post-settings-carefully">Use the Post Settings Carefully</h2>
+<p>The <code>Post</code> tab currently includes <code>Status</code>, <code>Publish</code>, <code>Slug</code>, <code>Author</code>, <code>Template</code>, <code>Discussion</code>, <code>Revisions</code>, <code>Categories</code>, and <code>Tags</code>.</p>
+<p>For a routine article update:</p>
 <ul>
-<li>Use short paragraphs for readability.</li>
-<li>Keep image sizes optimized for performance.</li>
-<li>Use consistent button/link styles when adding CTAs inside posts.</li>
-<li>Avoid hard-coded inline styles unless necessary.</li>
+<li>Leave <code>Template</code> set to <code>Single Posts</code>.</li>
+<li>Do not change <code>Slug</code> for an existing post unless a URL change and redirect have been approved.</li>
+<li>Review the <code>Publish</code> date before publishing or scheduling a new article.</li>
+<li>Use <code>Revisions</code> to review a previously saved version when necessary.</li>
 </ul>
-<h2 id="responsive-notes">Responsive Notes</h2>
+<p>The shared layout for all articles is under <code>Appearance &gt; Editor &gt; Templates &gt; All templates &gt; Single Posts</code>. Do not edit that template when you only need to change one article.</p>
+<h2 id="preview-save-and-check-the-post">Preview, Save, and Check the Post</h2>
+<ol>
+<li>Open <code>View</code> in the upper-right toolbar and preview the post.</li>
+<li>Check the title, featured image, headings, lists, links, and any accordion items.</li>
+<li>Check the article at desktop width and in a narrow mobile-sized window.</li>
+<li>Select <code>Save</code> only after the preview is correct.</li>
+<li>Open <code>View Post</code>, refresh it, and confirm the saved result.</li>
+<li>Open <code>/blog/</code> and confirm the post card has the correct image, title, category, excerpt, and link.</li>
+</ol>
+<p>Before saving, use <code>Undo</code> in the upper-left toolbar to reverse an accidental change. If the change was already saved, open <code>Revisions</code> in the <code>Post</code> tab and review the revision carefully before restoring it.</p>
+<h2 id="changes-that-need-extra-care">Changes That Need Extra Care</h2>
+<p>Ask the website administrator or an experienced editor before:</p>
 <ul>
-<li>Confirm image widths and tables/embeds are not overflowing on mobile.</li>
-<li>Long URLs should wrap correctly.</li>
-<li>Test post readability across desktop/tablet/mobile previews.</li>
+<li>Changing the <code>Single Posts</code> template.</li>
+<li>Adding a new block type or complex layout to an article.</li>
+<li>Changing responsive, spacing, animation, or advanced GreenShift settings.</li>
+<li>Adding custom code, embedded scripts, or unfamiliar third-party content.</li>
+<li>Changing an existing post URL.</li>
+</ul>
+<h2 id="block-editor-tutorials">Block Editor Tutorials</h2>
+<ul>
+<li><a href="https://learn.wordpress.org/tutorials/using-the-block-editor/">Using the Block Editor — Learn WordPress</a></li>
+<li><a href="https://wordpress.org/documentation/article/wordpress-block-editor/">WordPress Block Editor documentation</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIEKo1RENmYxv7s01erTf4Y6JbClr5AEk">GreenShift video tutorial playlist on YouTube</a></li>
 </ul>
               
             </div>
