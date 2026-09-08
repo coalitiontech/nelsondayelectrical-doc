@@ -62,17 +62,19 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Blog List</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#implementation-notes">Implementation Notes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#the-blog-page-and-the-blog-home-template-are-different">The Blog Page and the Blog Home Template Are Different</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#how-posts-appear-on-the-blog-list">How Posts Appear on the Blog List</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#content-source">Content Source</a>
+    <li class="toctree-l2"><a class="reference internal" href="#open-the-blog-home-template">Open the Blog Home Template</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#editing-blog-list-behavior">Editing Blog List Behavior</a>
+    <li class="toctree-l2"><a class="reference internal" href="#safely-update-the-blog-introduction">Safely Update the Blog Introduction</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#design-and-qa-rules">Design and QA Rules</a>
+    <li class="toctree-l2"><a class="reference internal" href="#changes-that-need-extra-care">Changes That Need Extra Care</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#responsive-notes">Responsive Notes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#check-the-blog-list">Check the Blog List</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#block-editor-tutorials">Block Editor Tutorials</a>
     </li>
     </ul>
                 </li>
@@ -109,52 +111,96 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="blog-list">Blog List</h1>
-<p>The blog list page is the archive page showing multiple posts (cards/list items) and linking to individual blog posts.</p>
-<h2 id="implementation-notes">Implementation Notes</h2>
+<p>The blog list at <code>/blog/</code> displays published posts automatically. Its post cards come from <code>Posts</code>, while the introductory text and the arrangement of the list come from the <code>Blog Home</code> template.</p>
+<h2 id="the-blog-page-and-the-blog-home-template-are-different">The Blog Page and the Blog Home Template Are Different</h2>
+<p>In <code>Pages &gt; All Pages</code>, the page named <code>Blog</code> is marked <code>Posts Page</code>. When it is opened, WordPress displays this notice:</p>
+<blockquote>
+<p>You are currently editing the page that shows your latest posts.</p>
+</blockquote>
+<p>That page establishes the blog address, but it does not contain the visible blog-list layout. Do not add blocks to the <code>Blog</code> page to change the introduction or post cards.</p>
+<p>Use the appropriate location for the type of change:</p>
+<table>
+<thead>
+<tr>
+<th>Change needed</th>
+<th>Where to make it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add, edit, or remove an article</td>
+<td><code>Posts &gt; All Posts</code></td>
+</tr>
+<tr>
+<td>Change a post's title, featured image, excerpt, or category</td>
+<td>Open that post in <code>Posts &gt; All Posts</code></td>
+</tr>
+<tr>
+<td>Change the blog introduction or list layout</td>
+<td><code>Appearance &gt; Editor &gt; Templates &gt; All templates &gt; Blog Home</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-posts-appear-on-the-blog-list">How Posts Appear on the Blog List</h2>
+<p>The <code>Blog Home</code> template currently uses a <code>Query Loop</code>. Inside it, the <code>Post Template</code> controls the repeated information shown for each article, including <code>Featured Image</code>, <code>Categories</code>, <code>Title</code>, <code>Excerpt</code>, and the <code>Read More</code> link.</p>
+<p>Publishing or updating a post updates the blog list automatically. You do not need to add the post manually to the <code>Blog</code> page.</p>
+<p>For a consistent list, each post should have:</p>
 <ul>
-<li>Built with WordPress posts archive behavior plus delivered front-end styling.</li>
-<li>Styling aligns with homepage/static page visual system.</li>
-<li>Desktop mockup guided design; mobile behavior is responsive best-fit.</li>
+<li>A clear title.</li>
+<li>A featured image with a similar shape and size to the other post images.</li>
+<li>A short excerpt.</li>
+<li>The correct category.</li>
 </ul>
-<h2 id="custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</h2>
-<p>Blog archive has custom styling in child theme CSS for:</p>
-<ul>
-<li>Archive spacing and container layout</li>
-<li>Custom sort wrapper UI (<code>.custom-blog-sort-wrap</code>, form/select styling)</li>
-<li>Sidebar search widget styling</li>
-<li>Entries spacing and responsive behavior</li>
-</ul>
-<h2 id="content-source">Content Source</h2>
-<ul>
-<li>Blog list content is sourced from WordPress <code>Posts</code>.</li>
-<li>Each card item generally uses:</li>
-<li>Featured image</li>
-<li>Post title</li>
-<li>Excerpt/summary</li>
-<li>Publish date and/or category (if enabled in template)</li>
-<li>Read more link</li>
-</ul>
-<h2 id="editing-blog-list-behavior">Editing Blog List Behavior</h2>
+<h2 id="open-the-blog-home-template">Open the Blog Home Template</h2>
+<p>Only open the template when the shared blog introduction or list structure needs to change.</p>
 <ol>
-<li>Go to <code>Posts</code> in WordPress admin to add/edit content.</li>
-<li>Ensure each post has:</li>
-<li>Featured image</li>
-<li>Clean title</li>
-<li>Short intro/excerpt</li>
-<li>Correct category/tags (if used)</li>
-<li>The archive page updates automatically based on published posts.</li>
+<li>Go to <code>Appearance &gt; Editor</code>.</li>
+<li>Under <code>Design</code>, select <code>Templates</code>.</li>
+<li>Select <code>All templates</code>.</li>
+<li>Select <code>Blog Home</code>.</li>
 </ol>
-<h2 id="design-and-qa-rules">Design and QA Rules</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-blog-home-template-annotated.png" data-desc-position="bottom"><img alt="Blog Home template content and settings marked" src="../img/wp-blog-home-template-annotated.png"></a></p>
+<p>The numbered callouts identify:</p>
+<ol>
+<li><code>Blog Home · Template</code>, confirming that the template—not the <code>Blog</code> page—is open.</li>
+<li>The introductory content displayed above the post list.</li>
+<li>The <code>Template</code> settings and <code>Content</code> list.</li>
+</ol>
+<p>The template's right sidebar currently includes <code>Revisions</code>, <code>Blog title</code>, <code>Posts per page</code>, <code>Discussion</code>, and <code>Content</code>.</p>
+<p>Changing <code>Posts per page</code> changes how many articles can appear before visitors move to another results page. Changing blocks inside <code>Query Loop &gt; Post Template</code> changes every repeated post card, not just one article.</p>
+<p>If the editor reports that a template part has been deleted or is unavailable, do not save the template. Take a screenshot of the message and contact the website administrator.</p>
+<h2 id="safely-update-the-blog-introduction">Safely Update the Blog Introduction</h2>
+<ol>
+<li>In <code>Blog Home</code>, select the existing introductory paragraph you need to change.</li>
+<li>Edit only the wording inside that paragraph block.</li>
+<li>Leave the surrounding <code>Columns</code>, <code>Group</code>, and <code>Query Loop</code> structure in place.</li>
+<li>Use <code>View</code> to preview the result.</li>
+<li>Select <code>Save</code> only after confirming that the introduction and post list still display correctly.</li>
+</ol>
+<h2 id="changes-that-need-extra-care">Changes That Need Extra Care</h2>
+<p>Ask the website administrator or an experienced editor before:</p>
 <ul>
-<li>Keep featured image aspect ratios consistent where possible.</li>
-<li>Use similar excerpt lengths to avoid uneven card heights.</li>
-<li>Avoid overly long titles that break layout.</li>
-<li>Check pagination and card spacing after publishing new posts.</li>
+<li>Moving, deleting, or replacing the <code>Query Loop</code>.</li>
+<li>Changing blocks inside <code>Post Template</code>.</li>
+<li>Changing the number of columns or the pagination design.</li>
+<li>Editing the Header, Footer, or another <code>Template Part</code> from this screen.</li>
+<li>Changing responsive, spacing, or advanced GreenShift settings.</li>
 </ul>
-<h2 id="responsive-notes">Responsive Notes</h2>
+<p>These are shared template changes and can affect the complete blog list.</p>
+<h2 id="check-the-blog-list">Check the Blog List</h2>
+<p>After publishing a post or saving an approved template change:</p>
+<ol>
+<li>Open the public <code>/blog/</code> page and refresh it.</li>
+<li>Confirm that the newest published post appears in the expected order.</li>
+<li>Check its featured image, title, category, excerpt, and <code>Read More</code> link.</li>
+<li>Open the post from the card and confirm that the destination is correct.</li>
+<li>Check the blog list on desktop and in a narrow mobile-sized window.</li>
+</ol>
+<h2 id="block-editor-tutorials">Block Editor Tutorials</h2>
 <ul>
-<li>Desktop multi-column cards should collapse into fewer columns on tablet/mobile.</li>
-<li>Ensure tap targets are comfortable and card links remain clear.</li>
+<li><a href="https://learn.wordpress.org/tutorials/using-the-block-editor/">Using the Block Editor — Learn WordPress</a></li>
+<li><a href="https://wordpress.org/documentation/article/query-loop-block/">WordPress Query Loop block documentation</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIEKo1RENmYxv7s01erTf4Y6JbClr5AEk">GreenShift video tutorial playlist on YouTube</a></li>
 </ul>
               
             </div>

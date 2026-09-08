@@ -70,17 +70,21 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Menu</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#primary-menu-management">Primary Menu Management</a>
+    <li class="toctree-l2"><a class="reference internal" href="#open-the-navigation-screen">Open the Navigation Screen</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#open-the-menu-editor">Open the Menu Editor</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#common-menu-item-types">Common Menu Item Types</a>
+    <li class="toctree-l2"><a class="reference internal" href="#change-a-menu-item">Change a Menu Item</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#dropdown-submenu-guidance">Dropdown / Submenu Guidance</a>
+    <li class="toctree-l2"><a class="reference internal" href="#add-a-menu-item">Add a Menu Item</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mobile-menu-guidance">Mobile Menu Guidance</a>
+    <li class="toctree-l2"><a class="reference internal" href="#create-or-update-a-dropdown">Create or Update a Dropdown</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#qa-checklist">QA Checklist</a>
+    <li class="toctree-l2"><a class="reference internal" href="#reorder-menu-items">Reorder Menu Items</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remove-a-menu-item">Remove a Menu Item</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#save-and-check-the-menu">Save and Check the Menu</a>
     </li>
     </ul>
                 </li>
@@ -108,49 +112,92 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="menu">Menu</h1>
-<p>This section covers navigation/menu setup for the delivered WordPress project.</p>
-<h2 id="primary-menu-management">Primary Menu Management</h2>
+                <h1 id="menu-navigation">Menu Navigation</h1>
+<p>The website menu helps visitors move between the main service, service area, and resource pages. This guide explains how to update the menu in the WordPress Site Editor without changing the rest of the header.</p>
+<h2 id="open-the-navigation-screen">Open the Navigation Screen</h2>
 <ol>
-<li>Go to <code>Appearance &gt; Menus</code>.</li>
-<li>Select the primary menu used in the header.</li>
-<li>Add/remove/reorder menu items as needed.</li>
-<li>Save menu and verify on front end.</li>
+<li>Log in to the WordPress dashboard.</li>
+<li>Go to <code>Appearance &gt; Editor</code>.</li>
+<li>Select <code>Navigation</code> from the Design menu.</li>
+<li>Review the menu items shown in the left panel.</li>
 </ol>
-<h2 id="custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</h2>
-<p>Navigation-related customizations in child theme include:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-menu-navigation-screen.png" data-desc-position="bottom"><img alt="WordPress Navigation screen showing the website menu structure" src="../img/wp-menu-navigation-screen.png"></a></p>
+<p>The current menu contains both main menu items and dropdown items. Items aligned at the far left are main menu items. Indented items appear inside a dropdown.</p>
+<h2 id="open-the-menu-editor">Open the Menu Editor</h2>
+<ol>
+<li>On the Navigation screen, click the three-dot <code>Actions</code> button beside the Navigation heading.</li>
+<li>Select <code>Edit</code>.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-menu-navigation-actions-edit-annotated.png" data-desc-position="bottom"><img alt="Navigation Actions button and Edit option marked with red rectangles" src="../img/wp-menu-navigation-actions-edit-annotated.png"></a></p>
+<p>The menu will open in the block editor. The main menu appears in the center of the screen, and its settings appear in the right sidebar.</p>
+<h2 id="change-a-menu-item">Change a Menu Item</h2>
+<ol>
+<li>Select the menu item you want to update.</li>
+<li>In the right sidebar, stay on the <code>Block</code> tab and open the <code>Content</code> section.</li>
+<li>Update the <code>Text</code> field to change the name visitors see.</li>
+<li>Review the <code>Link to</code> field to make sure the item opens the correct page.</li>
+<li>Use <code>Open in new tab</code> only when the link should open in a separate browser tab. For normal website pages, leave this option turned off.</li>
+<li>Click <code>Save</code> in the upper-right corner when the changes are ready.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-menu-item-settings-annotated.png" data-desc-position="bottom"><img alt="Menu item controls marked with red rectangles" src="../img/wp-menu-item-settings-annotated.png"></a></p>
+<p>The numbered callouts identify the <code>Block</code> tab (1), <code>Content</code> tab (2), <code>Text</code> field (3), and <code>Link to</code> setting (4).</p>
+<p>Changing the menu text does not change the title of the page itself. Changing the destination does not delete or edit the linked page.</p>
+<h2 id="add-a-menu-item">Add a Menu Item</h2>
+<ol>
+<li>Open the menu in the Navigation editor.</li>
+<li>Click the <code>Add page</code> button at the end of the menu.</li>
+<li>Search for an existing page and select it.</li>
+<li>To link to a different website or another URL, type or paste the full URL instead.</li>
+<li>Check the menu item's text and destination in the right sidebar.</li>
+<li>Move the new item to the correct position before saving.</li>
+</ol>
+<p>Avoid adding unpublished or unfinished pages to the public menu.</p>
+<h2 id="create-or-update-a-dropdown">Create or Update a Dropdown</h2>
+<ol>
+<li>Select the item that should act as the dropdown heading.</li>
+<li>Click <code>Add submenu</code> in the block toolbar.</li>
+<li>Search for and select the page that should appear inside the dropdown.</li>
+<li>Repeat the step for any additional dropdown links.</li>
+<li>Check the List View to confirm that each dropdown link is indented beneath the correct heading.</li>
+</ol>
+<p>Keep dropdowns short and group related pages together. The current main navigation uses dropdowns for Residential Services, Solar Services, Service Areas, and Resources.</p>
+<h2 id="reorder-menu-items">Reorder Menu Items</h2>
+<ol>
+<li>Select the menu item in the editor or List View.</li>
+<li>Use the move controls in the block toolbar, or drag the item in List View.</li>
+<li>Move an item left to place it earlier in the main menu.</li>
+<li>Move an item right to place it later in the main menu.</li>
+<li>Confirm that dropdown items remain beneath the correct parent item.</li>
+</ol>
+<p>After reordering, review the complete menu before saving. Moving a parent item also moves its dropdown items.</p>
+<h2 id="remove-a-menu-item">Remove a Menu Item</h2>
+<ol>
+<li>Select the menu item you want to remove.</li>
+<li>Open its three-dot <code>Options</code> menu.</li>
+<li>Select <code>Remove</code>.</li>
+<li>Review the rest of the menu, then click <code>Save</code>.</li>
+</ol>
+<p>Removing an item from the menu does not delete the page. It only removes the link from this navigation menu.</p>
+<h2 id="save-and-check-the-menu">Save and Check the Menu</h2>
+<ol>
+<li>Click <code>Save</code> in the upper-right corner.</li>
+<li>Review the changes listed in the save panel.</li>
+<li>Confirm the save.</li>
+<li>Open the front end of the website in a new tab.</li>
+<li>Check the menu on desktop and on a phone or narrow browser window.</li>
+</ol>
+<p>Confirm that:</p>
 <ul>
-<li>Header top bar alignment behavior</li>
-<li>Translator area alignment in top row</li>
-<li>Styled "book appointment" button icon treatment in header</li>
-<li>Footer menu separator/link styling for secondary footer menu</li>
+<li>Every link opens the intended page.</li>
+<li>Dropdowns open and close correctly.</li>
+<li>Main menu items appear in the intended order.</li>
+<li>Dropdown items appear beneath the correct heading.</li>
+<li>The mobile menu opens, scrolls, and closes normally.</li>
+<li>No text is clipped or overlapping.</li>
 </ul>
-<h2 id="common-menu-item-types">Common Menu Item Types</h2>
-<ul>
-<li>Custom links</li>
-<li>Pages</li>
-<li>Categories (for blog navigation)</li>
-</ul>
-<h2 id="dropdown-submenu-guidance">Dropdown / Submenu Guidance</h2>
-<ul>
-<li>Keep top-level labels short.</li>
-<li>Group related links under one parent item when needed.</li>
-<li>Do not overload a single dropdown with too many links.</li>
-</ul>
-<h2 id="mobile-menu-guidance">Mobile Menu Guidance</h2>
-<p>Because no dedicated mobile mockup was supplied, mobile menu behavior follows practical responsive standards:</p>
-<ul>
-<li>Use a collapsed/toggle menu pattern on small screens.</li>
-<li>Keep menu depth shallow for usability.</li>
-<li>Ensure touch spacing is sufficient between links.</li>
-<li>Test open/close interactions and submenu expansion on mobile.</li>
-</ul>
-<h2 id="qa-checklist">QA Checklist</h2>
-<ul>
-<li>All menu links open the correct destination.</li>
-<li>Active/current page state is visible where applicable.</li>
-<li>No overlapping text or clipped dropdowns on tablet/mobile.</li>
-</ul>
+<p>The following image shows the mobile menu with the Residential Services dropdown expanded:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-menu-mobile-expanded.png" data-desc-position="bottom"><img alt="Expanded mobile menu and Residential Services dropdown" src="../img/wp-menu-mobile-expanded.png"></a></p>
+<p>If the menu looks unchanged after saving, refresh the page and clear the website cache before checking again.</p>
               
             </div>
           </div><footer>

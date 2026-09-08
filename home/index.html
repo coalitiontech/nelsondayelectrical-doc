@@ -54,19 +54,19 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Homepage</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#implementation-notes">Implementation Notes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#open-the-homepage">Open the Homepage</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#find-the-content-to-edit">Find the Content to Edit</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#typical-homepage-sections">Typical Homepage Sections</a>
+    <li class="toctree-l2"><a class="reference internal" href="#routine-content-changes">Routine Content Changes</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#editing-the-homepage">Editing the Homepage</a>
+    <li class="toctree-l2"><a class="reference internal" href="#changes-that-need-extra-care">Changes That Need Extra Care</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#greenshift-block-guidance">Greenshift Block Guidance</a>
+    <li class="toctree-l2"><a class="reference internal" href="#preview-save-and-check-the-homepage">Preview, Save, and Check the Homepage</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#responsive-behavior-guidelines">Responsive Behavior Guidelines</a>
+    <li class="toctree-l2"><a class="reference internal" href="#correct-an-accidental-change">Correct an Accidental Change</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#caution">Caution</a>
+    <li class="toctree-l2"><a class="reference internal" href="#block-editor-tutorials">Block Editor Tutorials</a>
     </li>
     </ul>
                 </li>
@@ -111,66 +111,112 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="homepage">Homepage</h1>
-<p>This page documents the custom homepage build delivered in WordPress using Blocksy + Greenshift.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/homepage.jpeg" data-desc-position="bottom"><img alt="homepage.jpeg" src="img/homepage.jpeg"></a></p>
-<h2 id="implementation-notes">Implementation Notes</h2>
-<ul>
-<li>Built with Gutenberg/Greenshift blocks.</li>
-<li>Desktop mockup is the visual source of truth.</li>
-<li>Mobile and tablet behavior were implemented responsively without dedicated mockups.</li>
-</ul>
-<h2 id="custom-build-notes-confirmed-in-theme-code">Custom Build Notes (Confirmed in Theme Code)</h2>
-<p>Homepage-related custom classes and behavior exist in child theme CSS/JS:</p>
-<ul>
-<li><code>ct-services-offered</code> section styling and responsive card behavior</li>
-<li><code>ct-milk-mind-blogs</code> section styling and card overlays</li>
-<li><code>ct-youre-not-alone</code> visual overlay treatment</li>
-<li>Embla slider behavior via <code>js/script.js</code> and CDN enqueue in <code>functions.php</code></li>
-</ul>
-<h2 id="typical-homepage-sections">Typical Homepage Sections</h2>
-<p>The homepage was built with reusable block sections. Exact section naming in admin may vary, but generally includes:</p>
-<ul>
-<li>Nourish Your  Mind and Body (headline, supporting copy, call-to-action, image/background)</li>
-<li>Accreditations</li>
-<li>Find your path</li>
-<li>Physician Assistant w/ Gradient</li>
-<li>How it works</li>
-<li>Learn and explore</li>
-<li>Meet your team</li>
-<li>You're not alone</li>
-</ul>
-<h2 id="editing-the-homepage">Editing the Homepage</h2>
+<p>The homepage is the main page visitors see when they open the Nelson Day Electrical website. Its text, images, buttons, and links are edited with the WordPress block editor.</p>
+<p>The page is named <code>Your Local Licensed Electrician</code> and is marked <code>Front Page</code> in WordPress. It uses the <code>Homepage</code> template, but routine content updates should be made on the page itself. Do not edit the <code>Homepage</code> template when you only need to change homepage content.</p>
+<h2 id="open-the-homepage">Open the Homepage</h2>
 <ol>
-<li>Go to <code>Pages &gt; Home</code> (or the page assigned as Front Page in Settings).</li>
-<li>Open with block editor.</li>
-<li>Update text, links, and media directly in each section block.</li>
-<li>For layout adjustments, use the block sidebar settings (spacing, alignment, columns, stacking).</li>
-<li>Preview desktop/tablet/mobile before publishing.</li>
+<li>Log in to the WordPress dashboard.</li>
+<li>Go to <code>Pages &gt; All Pages</code>.</li>
+<li>Find <code>Your Local Licensed Electrician — Front Page</code>.</li>
+<li>Select the page title, or hover over the row and select <code>Edit</code>.</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/wp-homepage-be-1.png" data-desc-position="bottom"><img alt="wp-homepage-be-1.png" src="img/wp-homepage-be-1.png"></a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/wp-homepage-be.png" data-desc-position="bottom"><img alt="wp-homepage-be.png" src="img/wp-homepage-be.png"></a></p>
-<p><a href="https://youtu.be/te7aHH7trts?t=21&amp;si=HtpeaElcMJfPp5v9">Quick Tutorial on Gutenberg WordPress</a></p>
-<h2 id="greenshift-block-guidance">Greenshift Block Guidance</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-homepage-front-page-annotated.png" data-desc-position="bottom"><img alt="Pages and the Nelson Day Electrical Front Page marked" src="../img/wp-homepage-front-page-annotated.png"></a></p>
+<p>The numbered callouts identify:</p>
+<ol>
+<li><code>Pages &gt; All Pages</code> in the dashboard menu.</li>
+<li>The <code>Your Local Licensed Electrician — Front Page</code> row.</li>
+</ol>
+<h2 id="find-the-content-to-edit">Find the Content to Edit</h2>
+<p>The homepage is made from blocks. Each block controls a particular piece of content or part of the layout.</p>
+<ol>
+<li>Click <code>Document Overview</code> (the three-horizontal-lines button) near the upper-left corner.</li>
+<li>Stay on the <code>List View</code> tab.</li>
+<li>Use the arrows beside the blocks to expand their contents.</li>
+<li>Select a block in List View to open that block's options in the <code>Block</code> tab on the right.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-homepage-list-view-annotated.png" data-desc-position="bottom"><img alt="Document Overview, List View, and the homepage blocks marked" src="../img/wp-homepage-list-view-annotated.png"></a></p>
+<p>The numbered callouts identify:</p>
+<ol>
+<li>The <code>Document Overview</code> button.</li>
+<li>The <code>List View</code> tab.</li>
+<li>The homepage block list.</li>
+</ol>
+<p>The page includes standard WordPress blocks and GreenShift blocks. Common names you may see include:</p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>What it usually controls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Heading</code> or <code>Paragraph</code></td>
+<td>Visible text</td>
+</tr>
+<tr>
+<td><code>Image</code> or <code>Image Advanced</code></td>
+<td>A photograph, illustration, or icon</td>
+</tr>
+<tr>
+<td><code>Button Advanced</code></td>
+<td>Button wording and destination</td>
+</tr>
+<tr>
+<td><code>Columns</code>, <code>Column</code>, or <code>Stack</code></td>
+<td>The arrangement of content</td>
+</tr>
+<tr>
+<td><code>Row/Columns Advanced</code> or <code>Box Container</code></td>
+<td>GreenShift layout containers</td>
+</tr>
+<tr>
+<td><code>Text Advanced</code></td>
+<td>Text with GreenShift design options</td>
+</tr>
+</tbody>
+</table>
+<p>You do not need to learn every option before making a routine content update. Select the existing block that contains the item you need to change and leave the surrounding structure in place.</p>
+<h2 id="routine-content-changes">Routine Content Changes</h2>
+<p>The following updates can usually be made directly in the existing block:</p>
 <ul>
-<li>Reuse existing blocks/patterns before creating new styles.</li>
-<li>Prefer duplicating existing sections and editing content to keep style consistency.</li>
-<li>Keep typography, spacing, and button styles aligned with existing homepage blocks.</li>
-<li>Avoid adding extra plugins for layout if the same result can be achieved with current Greenshift + core blocks.</li>
+<li>Replace approved heading or paragraph text.</li>
+<li>Replace an existing image through its <code>Replace</code> control.</li>
+<li>Update existing button wording.</li>
+<li>Update an existing button or text-link destination through its <code>Link</code> control.</li>
 </ul>
-<h2 id="responsive-behavior-guidelines">Responsive Behavior Guidelines</h2>
-<p>Since there were no mobile-specific mockups, use these rules:</p>
+<p>Keep the current blocks and layout in place. After changing linked words or button text, confirm that the destination is still correct.</p>
+<h2 id="changes-that-need-extra-care">Changes That Need Extra Care</h2>
+<p>Ask the website administrator or an experienced editor for assistance before:</p>
 <ul>
-<li>Maintain content hierarchy from desktop.</li>
-<li>Stack multi-column sections on smaller screens.</li>
-<li>Keep CTA buttons easy to tap and fully visible.</li>
-<li>Avoid text overlays that become unreadable on mobile.</li>
-<li>Adjust spacing/padding to prevent cramped sections.</li>
+<li>Deleting, moving, or duplicating a section.</li>
+<li>Adding a new section or changing the number of columns.</li>
+<li>Changing spacing, responsive settings, animations, or advanced GreenShift options.</li>
+<li>Changing global colors, fonts, or reusable styles.</li>
+<li>Editing the <code>Homepage</code> template instead of the page.</li>
 </ul>
-<h2 id="caution">Caution</h2>
+<p>These changes can affect the page layout on desktop, tablet, or mobile devices.</p>
+<h2 id="preview-save-and-check-the-homepage">Preview, Save, and Check the Homepage</h2>
+<ol>
+<li>Use <code>View</code> in the upper-right toolbar to preview the page.</li>
+<li>Check the updated section on desktop, tablet, and a phone or narrow browser window.</li>
+<li>Confirm that text is readable, images are clear, and every edited button or link opens the intended destination.</li>
+<li>Click <code>Save</code> only after the preview is correct.</li>
+<li>Open the public homepage in a new tab and refresh it to confirm the saved result.</li>
+</ol>
+<p>If the public page appears unchanged, confirm that the save completed and that you are viewing the same website you edited. Refresh the page and use the website's existing cache-clearing process if needed.</p>
+<h2 id="correct-an-accidental-change">Correct an Accidental Change</h2>
+<p>Before saving, use <code>Undo</code> in the upper-left toolbar. If an incorrect change has already been saved, open the <code>Page</code> tab in the right sidebar and select the number beside <code>Revisions</code>.</p>
+<p>Restoring a revision can also replace other homepage changes made since that revision. Review the selected revision carefully and repeat the homepage checks afterward.</p>
+<h2 id="block-editor-tutorials">Block Editor Tutorials</h2>
+<p>These resources explain the editor controls in more detail:</p>
 <ul>
-<li>Global styles may affect multiple sections/pages. Validate after major style changes.</li>
-<li>If a section appears visually broken, check responsive controls and inherited block styles first.</li>
+<li><a href="https://learn.wordpress.org/tutorials/using-the-block-editor/">Using the Block Editor — Learn WordPress</a></li>
+<li><a href="https://wordpress.org/documentation/article/wordpress-block-editor/">WordPress Block Editor documentation</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIEKo1RENmYxv7s01erTf4Y6JbClr5AEk">GreenShift video tutorial playlist on YouTube</a></li>
+<li><a href="https://greenshiftwp.com/documentation/blocks/">GreenShift block documentation</a></li>
 </ul>
+<p>The WordPress resources cover the general editor. The GreenShift resources explain the additional blocks and design options used on this homepage.</p>
               
             </div>
           </div><footer>

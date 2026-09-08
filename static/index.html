@@ -58,15 +58,27 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Static Page</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#implementation-notes">Implementation Notes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#open-a-static-page">Open a Static Page</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#recommended-static-page-structure">Recommended Static Page Structure</a>
+    <li class="toctree-l2"><a class="reference internal" href="#understand-the-page-editor">Understand the Page Editor</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#editing-instructions">Editing Instructions</a>
+    <li class="toctree-l2"><a class="reference internal" href="#make-a-routine-content-change">Make a Routine Content Change</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#change-text">Change Text</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#layout-and-style-rules">Layout and Style Rules</a>
+    <li class="toctree-l3"><a class="reference internal" href="#replace-an-image">Replace an Image</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#responsive-guidance">Responsive Guidance</a>
+    <li class="toctree-l3"><a class="reference internal" href="#change-a-link">Change a Link</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-the-page-settings-carefully">Use the Page Settings Carefully</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preview-save-and-check-the-page">Preview, Save, and Check the Page</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#changes-that-need-extra-care">Changes That Need Extra Care</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#block-editor-tutorials">Block Editor Tutorials</a>
     </li>
     </ul>
                 </li>
@@ -106,40 +118,83 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="static-page">Static Page</h1>
-<p>This page type is for standard content pages (for example: About, Services, Contact-style informational pages) using the delivered design system.</p>
-<h2 id="implementation-notes">Implementation Notes</h2>
-<ul>
-<li>Built in WordPress block editor with Greenshift/core blocks.</li>
-<li>Desktop design is the main reference.</li>
-<li>Mobile behavior is handled through responsive best-fit adjustments.</li>
-</ul>
-<h2 id="recommended-static-page-structure">Recommended Static Page Structure</h2>
-<ul>
-<li>Intro/hero section with page title and optional subtitle</li>
-<li>Body content sections (text, image + text, icon lists, CTA strips)</li>
-<li>Optional final CTA section</li>
-</ul>
-<h2 id="editing-instructions">Editing Instructions</h2>
+                <h1 id="static-pages">Static Pages</h1>
+<p>Static pages contain information that does not belong to the blog. Examples include <code>About Us</code>, service pages, service-area pages, and <code>Contact</code>.</p>
+<p>Most routine updates are made on the individual page. The current static pages use the <code>Pages</code> template, which supplies the shared page layout around their content.</p>
+<h2 id="open-a-static-page">Open a Static Page</h2>
 <ol>
-<li>Go to <code>Pages</code> and select the desired static page.</li>
-<li>Edit content directly in existing blocks.</li>
-<li>Keep heading hierarchy consistent (<code>H1</code> once per page, then <code>H2/H3</code> as needed).</li>
-<li>Replace images using WordPress media library (optimize file size before upload).</li>
-<li>Preview before publishing.</li>
+<li>Log in to the WordPress dashboard.</li>
+<li>Go to <code>Pages &gt; All Pages</code>.</li>
+<li>Find the page you need. Use <code>Search Pages</code> if the list is long.</li>
+<li>Select the page title, or hover over its row and select <code>Edit</code>.</li>
 </ol>
-<h2 id="layout-and-style-rules">Layout and Style Rules</h2>
+<p>Do not select <code>Quick Edit</code> when you need to change the visible page content. <code>Quick Edit</code> is for administrative details rather than the blocks displayed on the page.</p>
+<h2 id="understand-the-page-editor">Understand the Page Editor</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/wp-static-page-editor-annotated.png" data-desc-position="bottom"><img alt="Static page title, content, and Page settings marked" src="../img/wp-static-page-editor-annotated.png"></a></p>
+<p>The numbered callouts identify:</p>
+<ol>
+<li>The page title.</li>
+<li>The page's existing content blocks.</li>
+<li>The <code>Page</code> settings panel.</li>
+</ol>
+<p>Click visible text or an image in the main editing area to select its block. For a longer page, click <code>Document Overview</code> in the upper-left toolbar and stay on the <code>List View</code> tab. Selecting a block in List View also selects it on the page.</p>
+<p>The current pages contain standard WordPress blocks and GreenShift blocks. Names you may see include <code>Paragraph</code>, <code>Image</code>, <code>Columns</code>, <code>Stack</code>, <code>Heading Advanced</code>, <code>Row/Columns Advanced</code>, <code>Box Container</code>, and <code>Text Advanced</code>.</p>
+<h2 id="make-a-routine-content-change">Make a Routine Content Change</h2>
+<h3 id="change-text">Change Text</h3>
+<ol>
+<li>Select the existing heading or paragraph.</li>
+<li>Edit the words directly in the page.</li>
+<li>Keep the existing block and its formatting in place.</li>
+</ol>
+<h3 id="replace-an-image">Replace an Image</h3>
+<ol>
+<li>Select the existing image.</li>
+<li>Use the block toolbar's <code>Replace</code> control.</li>
+<li>Choose an approved image from the Media Library or upload an optimized image.</li>
+<li>Add appropriate alternative text when the image communicates useful information.</li>
+</ol>
+<h3 id="change-a-link">Change a Link</h3>
+<ol>
+<li>Select the linked text, button, or block.</li>
+<li>Open its <code>Link</code> control.</li>
+<li>Replace the destination and apply the change.</li>
+<li>Use <code>View</code> to test the link before saving.</li>
+</ol>
+<p>Changing a linked block can be less obvious than changing text. If the link control is not visible, select the item in <code>List View</code> and check the <code>Block</code> tab in the right sidebar.</p>
+<h2 id="use-the-page-settings-carefully">Use the Page Settings Carefully</h2>
+<p>The <code>Page</code> tab currently includes settings such as <code>Status</code>, <code>Publish</code>, <code>Slug</code>, <code>Author</code>, <code>Template</code>, <code>Discussion</code>, <code>Revisions</code>, and <code>Parent</code>.</p>
+<p>For a normal content update:</p>
 <ul>
-<li>Reuse existing section patterns from delivered pages whenever possible.</li>
-<li>Keep consistent spacing rhythm between sections.</li>
-<li>Do not create one-off typography styles unless approved.</li>
-<li>Use existing button styles/colors from the homepage system.</li>
+<li>Leave <code>Template</code> set to <code>Pages</code>.</li>
+<li>Do not change <code>Slug</code> unless the website administrator has approved a URL change.</li>
+<li>Do not change <code>Parent</code> unless the page hierarchy is intentionally being reorganized.</li>
+<li>Use <code>Revisions</code> if a previously saved version needs to be reviewed.</li>
 </ul>
-<h2 id="responsive-guidance">Responsive Guidance</h2>
+<p>Changing a slug can break bookmarks, menu links, and search-engine results. Changing the template can alter the entire page layout.</p>
+<h2 id="preview-save-and-check-the-page">Preview, Save, and Check the Page</h2>
+<ol>
+<li>Open <code>View</code> in the upper-right toolbar and preview the page.</li>
+<li>Check the edited section at desktop width and in a narrow mobile-sized window.</li>
+<li>Confirm that text is readable, images display correctly, and edited links open the intended destination.</li>
+<li>Select <code>Save</code> only after the preview is correct.</li>
+<li>Open <code>View Page</code>, refresh it, and confirm the saved result.</li>
+</ol>
+<p>Before saving, use <code>Undo</code> in the upper-left toolbar to reverse an accidental change. If the change was already saved, use <code>Revisions</code> in the <code>Page</code> tab and review the revision carefully before restoring it.</p>
+<h2 id="changes-that-need-extra-care">Changes That Need Extra Care</h2>
+<p>Ask the website administrator or an experienced editor before:</p>
 <ul>
-<li>Convert side-by-side sections to stacked layout on smaller viewports.</li>
-<li>Keep line lengths readable on mobile.</li>
-<li>Confirm image crop/focal points still make sense at narrow widths.</li>
+<li>Deleting, moving, or duplicating a section.</li>
+<li>Adding a new section or changing the number of columns.</li>
+<li>Changing the <code>Pages</code> template.</li>
+<li>Changing responsive settings, spacing, animation, or advanced GreenShift options.</li>
+<li>Editing a form or shared design element.</li>
+</ul>
+<p>These changes can affect the page layout on multiple screen sizes or change other pages that share the same design.</p>
+<h2 id="block-editor-tutorials">Block Editor Tutorials</h2>
+<ul>
+<li><a href="https://learn.wordpress.org/tutorials/using-the-block-editor/">Using the Block Editor — Learn WordPress</a></li>
+<li><a href="https://wordpress.org/documentation/article/wordpress-block-editor/">WordPress Block Editor documentation</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIEKo1RENmYxv7s01erTf4Y6JbClr5AEk">GreenShift video tutorial playlist on YouTube</a></li>
 </ul>
               
             </div>
